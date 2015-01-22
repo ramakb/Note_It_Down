@@ -13,3 +13,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'haml', '~> 4.0.6'
 gem 'simple_form', '~> 3.1.0'
 gem 'devise', '~> 3.4.1'
+
+group :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'sqlite3'
+end
